@@ -1,15 +1,14 @@
-@import 'tailwindcss';
+@import "tailwindcss";
+@source "./app";
+
 @theme {
-    /* Colors */
-    --color-primary: #e4002b;
-    --color-body: #343a40;
-    --color-neutral: #bdbdbd;
-    --color-surface: #f4f4f5;
-    --color-muted: #a6a2a2;
+  --color-primary: #e4002b;
+  --color-body: #343a40;
+  --color-neutral: #bdbdbd;
+  --color-surface: #f4f4f5;
+  --color-muted: #a6a2a2;
 
-    /* Typography */
-    --font-sans: 'Inter', sans-serif;
+  --font-sans: 'Inter', sans-serif;
 
-    /*Shadow card*/
-    --shadow-card: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+  --shadow-card: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
 }

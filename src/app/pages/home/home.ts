@@ -6,5 +6,6 @@ import { FeaturedArticle } from '../../components/organisms/featured-article/fea
   imports: [FeaturedArticle],
   templateUrl: './home.html',
   styleUrl: './home.css',
+  standalone: true,
 })
 export class Home {}
