@@ -1,0 +1,17 @@
+<article class="article-card flex flex-col gap-4">
+
+<figure class="article-card__image m-0 w-full aspect-video rounded-lg overflow-hidden bg-neutral flex items-center justify-center">
+    @if (imageUrl()) {
+      <img
+        class="w-full h-full object-cover"
+        [src]="imageUrl()"
+        [alt]="imageAlt()"
+        sizes="(max-width: 1024px) 100vw, 33vw"
+        loading="lazy"
+        decoding="async"
+      />
+    } @else {
+      <span class="font-bold text-4xl uppercase text-muted" aria-hidden="true">Image</span>
+    }
+  </figure>
+</article>
