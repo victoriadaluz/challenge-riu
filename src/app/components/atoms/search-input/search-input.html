@@ -1,1 +1,23 @@
-<p>search-input works!</p>
+<div
+  class="search-input flex items-center bg-surface h10 px 4 rounded-lg w-full llg:w-[300px]"
+  role="search"
+>
+<svg
+    class="shrink-0 mr-3"
+    width="16" height="16" viewBox="0 0 24 24"
+    fill="none" aria-hidden="true"
+  >
+    <circle cx="10.5" cy="10.5" r="6.5" stroke="#343a40" stroke-width="1.5"/>
+    <path d="M15.5 15.5L20 20" stroke="#343a40" stroke-width="1.5" stroke-linecap="round"/>
+  </svg>
+
+  <label for="search-field" class="sr-only">{{ariaLabel()}}</label>
+    <input
+        id="search-field"
+        class="flex-1 bg-transparent outline-none text-base text-body placeholder:text-muted"
+        type="search"
+        [placeholder]="placeholder()"
+        [(ngModel)]="query"
+        (keyup.enter)="onSearch()"
+        />
+</div>
