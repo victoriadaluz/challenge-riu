@@ -2,13 +2,13 @@
 @theme {
     /* Colors */
     --color-primary: #e4002b;
-    --color-body-text: #343a40;
+    --color-body: #343a40;
     --color-neutral: #bdbdbd;
     --color-surface: #f4f4f5;
     --color-muted: #a6a2a2;
 
     /* Typography */
-    --font-family-sans: 'Inter', sans-serif;
+    --font-sans: 'Inter', sans-serif;
 
     /*Shadow card*/
     --shadow-card: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
