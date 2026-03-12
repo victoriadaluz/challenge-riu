@@ -1,1 +1,15 @@
-<p>gallery works!</p>
+<section class="gallery py-8 px-5 lg:py-24 lg:px-8"
+aria-label="Gallery"
+>
+<div class="gallery__container w-full max-w-[1542px] mx-auto flex flex-col gap-6 lg:gap-[48px]">
+
+    <header class="gallery__header flex flex-col gap-6">
+        <h2 class="gallery__title m-0 font-bold text-[30px] leading-8 text-black lg:text-[48px] lg:leading-[58px]">
+        {{ sectionMainTitle() }}
+      </h2>
+      <p class="gallery__description m-0 text-base leading-6 text-black">
+        {{ sectionDescription() }}
+      </p>
+    </header>
+</div>
+</section>
