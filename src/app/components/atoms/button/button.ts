@@ -1,10 +1,9 @@
 import { Component, input, output} from '@angular/core';
-import { NgClass } from '@angular/common';
 export type ButtonVariant = 'primary' | 'secondary';
 export type ButtonType = 'button' | 'submit' | 'reset';
 @Component({
   selector: 'app-button',
-  imports: [NgClass],
+  imports: [],
   templateUrl: './button.html',
   styleUrl: './button.css',
 })

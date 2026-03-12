@@ -81,19 +81,9 @@
           </p>
 
         </div>
-        <button
-          class="featured-article__cta
-                 inline-flex items-center justify-center
-                 h-10 px-2 rounded-lg
-                 bg-primary text-white
-                 font-bold text-base leading-6
-                 cursor-pointer transition-opacity hover:opacity-90"
-          type="button"
-          [attr.aria-label]="ctaLabel()"
-        >
-          {{ ctaLabel() }}
-        </button>
-
+        <app-button class="featured-article__cta inline-flex items-center"
+         [label]="ctaLabel()" 
+        ></app-button>
       </div>
     </article>
 
