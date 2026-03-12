@@ -1,11 +1,11 @@
 <article class="article-card flex flex-col gap-4">
 
 <figure class="article-card__image m-0 w-full aspect-video rounded-lg overflow-hidden bg-neutral flex items-center justify-center">
-    @if (imageUrl()) {
+    @if (articleImageUrl()) {
       <img
         class="w-full h-full object-cover"
-        [src]="imageUrl()"
-        [alt]="imageAlt()"
+        [src]="articleImageUrl()"
+        [alt]="articleImageAlt()"
         sizes="(max-width: 1024px) 100vw, 33vw"
         loading="lazy"
         decoding="async"

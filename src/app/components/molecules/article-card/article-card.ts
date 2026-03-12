@@ -8,10 +8,10 @@ import { Component, input } from '@angular/core';
   standalone: true,
 })
 export class ArticleCard {
-  date = input<string>('');
-  datetime = input<string>('');
-  title = input<string>('');
-  description = input<string>('');
-  imageUrl = input<string>('');
-  imageAlt = input<string>('');
+  articleDate = input<string>('');
+  articleDateTime = input<string>('');
+  articleTitle = input<string>('');
+  articleDescription = input<string>('');
+  articleImageUrl = input<string>('');
+  articleImageAlt = input<string>('');
 }
