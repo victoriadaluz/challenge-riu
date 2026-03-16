@@ -33,11 +33,13 @@ BEM lo implementé de forma semántica en las clases, no como sistema de estilos
 
 Utilicé PixelParallel para comparar entre diseño y maquetado.
 
+Para un código más limpio utilizo Prettier, que es un code formatter. 
+
 ## Desafíos
 
-**Tailwind 4 con Angular:** La integración de Tailwind 4 vía `@tailwindcss/postcss` tuvo algunas fricciones iniciales — `@apply` no funcionó como en versiones previas, y algunas clases necesité reajustarlas para alinearme al diseño original. Esto está evidenciado en el historial de commits a lo largo de los días, que por costumbre decidí commitear en inglés.
+**Tailwind 4 con Angular:** La integración de Tailwind 4 vía `@tailwindcss/postcss` tuvo algunos inconvenientes iniciales ya que `@apply` no funcionó como en versiones previas, y algunas clases necesité reajustarlas para alinearme al diseño original. Esto está evidenciado en el historial de commits a lo largo de los días, que por costumbre decidí commitear en inglés.
 
-**Scroll horizontal en galería mobile:** La sección 3 en mobile está hecha con scroll horizontal nativo con CSS (`overflow-x-auto` y `snap-x`) sin dependencias adicionales.
+**Scroll horizontal en galería para mobile:** La sección 3 en mobile está hecha con scroll horizontal nativo con CSS (`overflow-x-auto` y `snap-x`) sin dependencias adicionales.
 
 ## Instalación
 ```bash
