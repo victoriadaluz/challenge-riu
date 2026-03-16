@@ -1,11 +1,9 @@
-<section
-  class="gallery py-8 px-5 lg:py-24 lg:px-8"
-  aria-label="Galería"
->
+<section class="gallery py-8 px-5 lg:py-24 lg:px-8" aria-label="Galería">
   <div class="gallery__container w-full max-w-[1542px] mx-auto flex flex-col gap-6 lg:gap-[48px]">
-
     <header class="gallery__header flex flex-col gap-6">
-      <h2 class="gallery__title m-0 font-bold text-[30px] leading-8 text-black lg:text-[48px] lg:leading-[58px]">
+      <h2
+        class="gallery__title m-0 font-bold text-[30px] leading-8 text-black lg:text-[48px] lg:leading-[58px]"
+      >
         {{ sectionMainTitle() }}
       </h2>
       <p class="gallery__description m-0 text-base leading-6 text-black">
@@ -14,19 +12,12 @@
     </header>
 
     <div
-      class="gallery__list
-             flex gap-8 overflow-x-auto pb-4 scroll-smooth snap-x snap-mandatory
-             lg:grid lg:grid-cols-4 lg:gap-[32px] lg:overflow-visible lg:pb-0"
+      class="gallery__list flex gap-8 overflow-x-auto pb-4 scroll-smooth snap-x snap-mandatory lg:grid lg:grid-cols-4 lg:gap-[32px] lg:overflow-visible lg:pb-0"
     >
       @for (item of items(); track item.id) {
         <div
-          class="gallery__item
-                 relative rounded-lg overflow-hidden bg-neutral
-                 shrink-0 w-[284px] h-[378px]
-                 snap-start
-                 lg:w-auto lg:h-auto lg:aspect-[3/4] lg:shrink"
+          class="gallery__item relative rounded-lg overflow-hidden bg-neutral shrink-0 w-[284px] h-[378px] snap-start lg:w-auto lg:h-auto lg:aspect-[3/4] lg:shrink"
         >
-
           @if (item.imageUrl) {
             <img
               class="w-full h-full object-cover"
@@ -43,11 +34,7 @@
 
           <!-- Overlay -->
           <div
-            class="gallery__overlay
-                   absolute bottom-0 left-0 right-0
-                   h-[175px] p-4
-                   flex flex-col justify-between
-                   bg-gradient-to-t from-black to-transparent"
+            class="gallery__overlay absolute bottom-0 left-0 right-0 h-[175px] p-4 flex flex-col justify-between bg-gradient-to-t from-black to-transparent"
           >
             <div class="flex flex-col gap-2">
               <p class="m-0 font-bold text-[30px] leading-[38px] text-white">
@@ -60,19 +47,20 @@
 
             <div class="flex items-end gap-1">
               <span class="font-bold text-base leading-6 text-white">{{ item.downloadLabel }}</span>
-              <svg
-                width="24" height="24" viewBox="0 0 24 24"
-                fill="none" aria-hidden="true"
-              >
-                <path d="M12 4v12m0 0l-4-4m4 4l4-4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M4 20h16" stroke="white" stroke-width="2" stroke-linecap="round"/>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path
+                  d="M12 4v12m0 0l-4-4m4 4l4-4"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path d="M4 20h16" stroke="white" stroke-width="2" stroke-linecap="round" />
               </svg>
             </div>
           </div>
-
         </div>
       }
     </div>
-
   </div>
 </section>

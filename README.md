@@ -1,59 +1,46 @@
-# ChallengeRiu
+# Challenge RIU — Frontend
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.1.
+Maquetación de interfaz a partir de diseño Figma en Angular 18+.
 
-## Development server
+## Tecnologías
 
-To start a local development server, run:
+- Angular 21
+- Tailwind CSS 4
+- TypeScript
 
+## Estructura
+
+El proyecto sigue **Atomic Design** con **BEM** como buenas prácticas.
+```
+src/app/
+├── core/
+│   └── models/
+├── components/
+│   ├── atoms/        # button, search-input
+│   ├── molecules/    # article-card
+│   └── organisms/    # featured-article, articles-grid, gallery
+└── pages/
+    └── home/
+```
+
+## Sobre el styling
+
+La mayor parte del estilo vive en los templates HTML como clases de Tailwind, no en archivos CSS separados. Esto es intencional: Tailwind 4 está diseñado para trabajar así, y se complementa con los componentes standalone de Angular. Es por eso que pueden observar en los porcentajes de GitHub que hay más HTML y TypeScript que CSS. 
+
+Los archivos `.css` de componente quedaron vacíos o con estilos mínimos. El único CSS global relevante está en `styles.css`, donde definí los tokens del diseño del Figma usando `@theme`.
+
+BEM lo implementé de forma semántica en las clases, no como sistema de estilos. 
+
+Utilicé PixelParallel para comparar entre diseño y maquetado.
+
+## Desafíos
+
+**Tailwind 4 con Angular:** La integración de Tailwind 4 vía `@tailwindcss/postcss` tuvo algunas fricciones iniciales — `@apply` no funcionó como en versiones previas, y algunas clases necesité reajustarlas para alinearme al diseño original. Esto está evidenciado en el historial de commits a lo largo de los días, que por costumbre decidí commitear en inglés.
+
+**Scroll horizontal en galería mobile:** La sección 3 en mobile está hecha con scroll horizontal nativo con CSS (`overflow-x-auto` y `snap-x`) sin dependencias adicionales.
+
+## Instalación
 ```bash
+npm install
 ng serve
 ```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.

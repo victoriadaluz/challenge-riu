@@ -5,7 +5,7 @@ import { Button } from '../../atoms/button/button';
   imports: [Button],
   templateUrl: './featured-article.html',
   styleUrl: './featured-article.css',
-  standalone: true
+  standalone: true,
 })
 export class FeaturedArticle {
   date = input<string>('');
