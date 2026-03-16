@@ -6,6 +6,7 @@ export type ButtonType = 'button' | 'submit' | 'reset';
   imports: [],
   templateUrl: './button.html',
   styleUrl: './button.css',
+  standalone: true
 })
 export class Button {
   label = input.required<string>();

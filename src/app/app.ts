@@ -4,7 +4,8 @@ import { Home } from './pages/home/home';
   selector: 'app-root',
   imports: [Home],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrl: './app.css',
+  standalone: true
 })
 export class App {
   protected readonly title = signal('challenge-riu');
