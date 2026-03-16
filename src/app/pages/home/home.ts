@@ -19,7 +19,7 @@ export class Home {
     title: 'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id.',
     imageUrl: '',
-    imageAlt: `Imagen artículo ${i + 1}`,
+    imageAlt: `Image article ${i + 1}`,
   }));
 
  galleryItems: GalleryItem[] = Array.from({ length: 4 }, (_, i) => ({
@@ -28,6 +28,6 @@ export class Home {
     subtitle: 'Lorem ipsum dolor sit amet consectetur.',
     downloadLabel: 'Lorem ipsum',
     imageUrl: '',
-    imageAlt: `Imagen galería ${i + 1}`,
+    imageAlt: `Image gallery ${i + 1}`,
   }));
 }
