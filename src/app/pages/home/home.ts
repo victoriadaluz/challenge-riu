@@ -12,7 +12,7 @@ import { GalleryItem } from '../../core/models/gallery-item.model';
   standalone: true,
 })
 export class Home {
-  articles: Article[] = Array.from({ length: 4 }, (_, i) => ({
+  articles: Article[] = Array.from({ length: 6 }, (_, i) => ({
     id: i + 1,
     date: 'Lorem ipsum dolor sit amet.',
     datetime: '2025-03-01',
