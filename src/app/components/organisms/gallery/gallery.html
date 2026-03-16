@@ -13,19 +13,20 @@
       </p>
     </header>
 
-    <!-- Mobile: scroll horizontal | Desktop: grid 4 columnas -->
     <div
       class="gallery__list
-             flex gap-8 overflow-x-auto pb-4
-             lg:grid lg:grid-cols-4 lg:overflow-visible lg:pb-0"
+             flex gap-8 overflow-x-auto pb-4 scroll-smooth snap-x snap-mandatory
+             lg:grid lg:grid-cols-4 lg:gap-[32px] lg:overflow-visible lg:pb-0"
     >
       @for (item of items(); track item.id) {
         <div
           class="gallery__item
                  relative rounded-lg overflow-hidden bg-neutral
-                 shrink-0 w-[284px] aspect-[3/4]
-                 lg:w-auto lg:aspect-[3/4] lg:shrink lg:flex-1"
+                 shrink-0 w-[284px] h-[378px]
+                 snap-start
+                 lg:w-auto lg:h-auto lg:aspect-[3/4] lg:shrink"
         >
+
           @if (item.imageUrl) {
             <img
               class="w-full h-full object-cover"
@@ -59,7 +60,10 @@
 
             <div class="flex items-end gap-1">
               <span class="font-bold text-base leading-6 text-white">{{ item.downloadLabel }}</span>
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <svg
+                width="24" height="24" viewBox="0 0 24 24"
+                fill="none" aria-hidden="true"
+              >
                 <path d="M12 4v12m0 0l-4-4m4 4l4-4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M4 20h16" stroke="white" stroke-width="2" stroke-linecap="round"/>
               </svg>

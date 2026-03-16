@@ -5,6 +5,7 @@ import { GalleryItem } from '../../../core/models/gallery-item.model';
   imports: [],
   templateUrl: './gallery.html',
   styleUrl: './gallery.css',
+  standalone: true
 })
 export class Gallery {
   sectionMainTitle = input<string>('');
